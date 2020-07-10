@@ -31,12 +31,19 @@
         .item .tag {
             background-color: red;
             padding: 6px 10px;
-            width: 30px;
-            height: 20px;
+            line-height: 20px;
             color: #fff;
             position: absolute;
             top: 15px;
-            left: -10px;
+            left: 0px;
+        }
+        .item::before {
+            content: '';
+            position: absolute;
+            top: 47px;
+            left: 0px;
+            border-top: 10px solid red;
+            border-left: 10px solid transparent;
         }
 
     </style>
