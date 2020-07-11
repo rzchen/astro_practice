@@ -1,19 +1,4 @@
-class Animal
-  def walk
-    puts "Walk"
-  end
-  def eat
-    puts "Eat"
-  end
+def hello
 end
 
-class Cat < Animal
-  
-end
-
-class Dog < Animal
-  
-end
-
-Yo = Cat.new
-Yo.walk
+p self.private_methods.sort
