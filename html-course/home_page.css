@@ -63,8 +63,33 @@ body {
   content: '';
   display: block;
   background-color: #CE0035;
-  height: 4px;
-  width: 100px;
-  margin: 30px auto;
+  height: 3px;
+  width: 80px;
+  margin: 20px auto;
 }
-
+.about .list-group h3,
+.about .list-group p,
+.about .list-group a {
+  display: flex;
+  color: #434343;
+  text-decoration: none;
+  text-align: center;
+}
+.about .list-group {
+  display: flex;
+  margin: auto;
+}
+.about .list-group .item {
+  width: 250px;
+  padding: 25px;
+}
+.about .item p,
+.about .item a,
+.about .item h3 {
+  display: inline-block;
+  text-align: center;
+}
+.about .item h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
