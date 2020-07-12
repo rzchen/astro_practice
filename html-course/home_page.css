@@ -16,12 +16,13 @@ body {
   left: 0;
   display: flex;
   justify-content: space-between;
+  line-height: ;
 }
 .nav .logo {
   padding: 25px;
   display: flex;
 }
-.nav .logo a, h1 {
+.nav .logo * {
   color: #CE0035;
   font-size: 16px;
   text-decoration: none;
@@ -33,15 +34,16 @@ body {
 }
 .right-pages {
   display: flex;
-  
+  margin-right: 15px;
 }
-.right-pages .pages h2,
-.right-pages .pages a {
+.right-pages .pages * {
   color: #646464;
   text-decoration: none;
-  font-size: 22px;
-  /* display: inline-block; */
-  /* padding: 5px 10px; */
+  font-size: 18px;
+  display: inline-block;
+  line-height: 10px;
+  padding: 5px 5px;
+  margin-top: 10px;
 }
 .top-banner img {
   width: 100%;
@@ -67,9 +69,7 @@ body {
   width: 80px;
   margin: 20px auto;
 }
-.about .list-group h3,
-.about .list-group p,
-.about .list-group a {
+.about .list-group * {
   display: flex;
   color: #434343;
   text-decoration: none;
@@ -83,9 +83,7 @@ body {
   width: 250px;
   padding: 25px;
 }
-.about .item p,
-.about .item a,
-.about .item h3 {
+.about .item * {
   display: inline-block;
   text-align: center;
 }
