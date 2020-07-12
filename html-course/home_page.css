@@ -16,7 +16,6 @@ body {
   left: 0;
   display: flex;
   justify-content: space-between;
-  line-height: ;
 }
 .nav .logo {
   padding: 25px;
@@ -90,4 +89,91 @@ body {
 .about .item h3 {
   font-size: 24px;
   margin-bottom: 15px;
+}
+
+
+
+.prompt-course .container {
+  width: 1200px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  /* justify-content: center; */
+}
+.prompt-course .container .title {
+  text-align: center;
+  
+}
+
+.prompt-course {
+  width: 100%;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.prompt-course .course-group {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.prompt-course .container .title h2 {
+  color: #434343;
+}
+.prompt-course .container .title h2:after {
+  content: '';
+  display: block;
+  background-color: #CE0035;
+  height: 3px;
+  width: 80px;
+  margin: 20px auto;
+}
+.prompt-course .item {
+  width: 350px;
+  margin: 25px;
+  border: 1px solid #ccc;
+}
+.prompt-course .item img {
+  width: 100%;
+}
+.down-area {
+  padding: 5px;
+}
+.course-title {
+  margin: 10px;
+}
+.open-now-tag {
+  width: 70px;
+  background-color: #CE0035;
+  padding: 3px 3px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.course-group a {
+  text-decoration: none;
+}
+.open-now-tag p {
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+.course-title h4 {
+  color: #535353;
+  line-height: 30px;
+  padding: 5px auto;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.teacher {
+  color: #878787;
+  font-size: 14px;
+
+}
+.course-time {
+  border-top: 1px solid #D5D5D5;
+  margin: 10px;
+  padding-top: 15px;
+  display: flex;
 }
