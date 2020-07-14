@@ -1,0 +1,203 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .wrap {
+      width: 100%;
+    }
+    .container {
+      width: 962px;
+      height: 816px;
+      background-color: #fff;
+      margin: auto;
+      position: relative;
+      margin-top: 100px;
+    }
+    .red {
+      width: 355px;
+      height: 138px;
+      background-color: #AA0008;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+    }
+    .red .number{
+      display: inline-block;
+      line-height: 65px;
+      margin-top: 10px;
+      margin-right: 20px;
+    }
+    .red .number p {
+      writing-mode: vertical-lr;
+      font-size: 100px;
+      color: #fff;
+    }
+    .red .feature {
+      display: inline-block;
+    }
+    .red .feature h1 {
+      text-align: center;
+      display: inline-block;
+      font-size: 60px;
+      color: #fff;
+    }
+
+    .black {
+      width: 355px;
+      height: 250px;
+      background-color: #000;
+      position: relative;
+      z-index: 3;
+      box-sizing: border-box;
+      padding: 15px 30px;
+    }
+    .black h2,
+    .black p {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .car {
+      width: 695px;
+      height: 430px;
+      position: relative;
+      top: -250px;
+      left: 186px;
+      z-index: 2;
+    }
+    .details {
+      width: 684px;
+      height: 278px;
+      background-color: #EAEAEA;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      top: -280px;
+      left: 50px;
+      z-index: 3;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+    .details h2 {
+      color: #AA0008;
+      font-size: 20px;
+      display: inline-block;
+      margin-bottom: 10px;
+      position: relative;
+      font-weight: bolder;
+    }
+    .details h2::after {
+      content: '';
+      /* display: block; */
+      position: absolute;
+      background-color: #CE0035;
+      height: 2px;
+      width: 400px;
+      top: 50%;
+      /* margin-top: 0px; */
+      margin-left: 10px;
+    }    
+    .details .title h3 {
+      display: inline-block;
+      padding: 5px 8px;
+      background-color: #000;
+      color: #fff;
+      border-radius: 5px;
+    }
+    .details .title {
+      padding-left: 3px;
+    }
+    .details .item {
+      display: flex;
+      margin: 3px 0px;
+    }
+    .list {
+      width: 20px;
+      height: 20px;
+      box-sizing: border-box;
+      padding-left: 10px;
+      padding-top: 12px;
+    }
+    .list .point {
+      width: 1px;
+      height: 1px;
+      background-color: #CE0035;
+      border: 2px solid #CE0035;
+      border-radius: 50%;
+    }
+
+    .car img {
+      width: 100%;
+    }
+    .gray {
+      width: 439px;
+      height: 290px;
+      background-color: #ccc;
+      position: absolute;
+      top: 37px;
+      right: 0;
+    }
+    .btn {
+      width: 57px;
+      height: 36px;
+      position: absolute;
+      top: 336px;
+      right: 68px;
+      z-index: 3;
+    }
+
+
+  
+    .red2,
+    .red4 {
+      position: relative;
+      top: 0px;
+      left: 605px;
+      z-index: 3;
+    }
+    .black2,
+    .black4 {
+      position: relative;
+      top: 0px;
+      left: 605px;
+      z-index: 3;
+    }
+    .car2,
+    .car4 {
+      position: relative;
+      top: -250px;
+      left: 8px;
+      z-index: 2;
+    }
+    .details2,
+    .details4 {
+      width: 682px;
+      height: 181px;
+      background-color: #EAEAEA;
+      position: relative;
+      top: -281px;
+      left: 279px;
+      z-index: 3;
+    }
+    .car2 img,
+    .car4 img {
+      width: 100%;
+    }
+    .gray2,
+    .gray4 {
+      width: 520px;
+      height: 416px;
+      background-color: #ccc;
+      position: absolute;
+      top: 60px;
+      right: 165px;
+    }
+    .btn2,
+    .btn4 {
+      position: absolute;
+      top: 343px;
+      left: 0;
+      z-index: 3;
+    }
