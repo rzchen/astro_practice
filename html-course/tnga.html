@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .wrap {
+      width: 100%;
+    }
+    .container {
+      width: 960px;
+      height: 776px;
+      background-color: pink;
+      margin: auto;
+      position: relative;
+      padding: 36px 0 0;
+    }
+    .car {
+      width: 695px;
+      height: 430px;
+      margin: auto;
+      padding-top: 100px;
+      position: relative;
+      z-index: 1;
+    }
+    .car img {
+      width: 100%;
+      
+    }
+    .title {
+      width: 355px;
+      height: 388px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
+    .title .red {
+      height: 138px;
+      background-color: #AA0008;
+    }
+    .title .black {
+      height: 250px;
+      background-color: #000;
+    }
+    .gray {
+      width: 439px;
+      height: 290px;  
+      background-color: #ccc;
+      position: absolute;
+      top: 37px;
+      right: 0;
+      z-index: 0;
+    }
+    .btn {
+      width: 57px;
+      height: 36px;
+      position: relative;
+      z-index: 3;
+      left: 800px;
+      bottom: 225px;
+    }
+    .btn img {
+      width: 100%;
+    }
+    .details {
+      width: 682px;
+      height: 275px;
+      background-color: #ccc;
+      position: relative;
+      left: 50px;
+      bottom: 65px;
+      z-index: 2;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <div class="car">
+        <img src="pic/pic-car.png" alt="">
+      </div>
+      <div class="btn">
+        <img src="pic/btn.png" alt="">
+      </div>
+      <div class="title">
+        <div class="red">
+        </div>
+        <div class="black">
+        </div>
+      </div>
+      <div class="gray">
+
+      </div>
+      
+      <div class="details">
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
