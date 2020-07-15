@@ -9,43 +9,62 @@
       margin: 0;
       padding: 0;
       list-style: none;
+      margin: auto;
     }
     .wrap {
       width: 100%;
-      max-width: 1200px;
-      display: flex;
-      margin: auto;
-      background-color: #ccc;
+      max-width: 960px;
     }
-    .col {
-      width: 16.666666667%;
+    .column {
+      width: 100%;
       box-sizing: border-box;
-      padding: 0px 15px;
+      margin-bottom: 15px;
+      padding: 10px;
     }
     .item {
       height: 200px;
+      
       background-color: red;
+    }
+    @media screen and (min-width: 768px){
+      .wrap {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .column {
+        width: calc(100% / 2);
+      }
+    }
+    @media screen and (min-width: 992px){
+      .column {
+        width: calc(100% / 3);
+      }
+    }
+    @media screen and (min-width: 1200px){
+      .column {
+        width: calc(100% / 6);
+      }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <div class="col">
+    <div class="column">
       <div class="item"></div>
     </div>
-    <div class="col">
+    <div class="column">
       <div class="item"></div>
     </div>
-    <div class="col">
+    <div class="column">
       <div class="item"></div>
     </div>
-    <div class="col">
+    <div class="column">
       <div class="item"></div>
     </div>
-    <div class="col">
+    <div class="column">
       <div class="item"></div>
     </div>
-    <div class="col">
+    <div class="column">
       <div class="item"></div>
     </div>
   </div>
