@@ -5,15 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
     .container {
-      display: flex;
       width: 100%;
       max-width: 1200px;
-      margin: auto;
       padding-left: 15px;
       padding-right: 15px;
+      box-sizing: border-box;
+      margin: auto;
     }
-    [class^="col-"] {
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+    [class^="col-"] { 
       padding-left: 15px;
       padding-right: 15px;
       box-sizing: border-box;
@@ -72,15 +83,12 @@
       .col-xl-11{ width: 91.666666%;}
       .col-xl-12{ width: 100%;      } 
     }
+    /* row主要目的：(1) flex橫排+折行 (2)消除掉父層的padding */
     .item img {
       width: 100%;
     }
-    .row {
-      display: flex;
-      flex-wrap: wrap;
-      margin-right: -15px;
-      margin-left: -15px;
-    }
+
+
   </style>
 </head>
 <body>
@@ -89,29 +97,43 @@
       <div class="col-12 col-md-6 col-lg-4 col-xl-2">
         <div class="item">
           <img src="https://picsum.photos/300/200/?random=1">
-          <h3>title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nam?</p>
+          <h2>title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, esse.</p>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 col-xl-2">
         <div class="item">
           <img src="https://picsum.photos/300/200/?random=1">
-          <h3>title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nam?</p>
+          <h2>title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, esse.</p>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 col-xl-2">
         <div class="item">
           <img src="https://picsum.photos/300/200/?random=1">
-          <h3>title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nam?</p>
+          <h2>title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, esse.</p>
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-4 col-xl-2">
         <div class="item">
           <img src="https://picsum.photos/300/200/?random=1">
-          <h3>title</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nam?</p>
+          <h2>title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, esse.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="item">
+          <img src="https://picsum.photos/300/200/?random=1">
+          <h2>title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, esse.</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 col-xl-2">
+        <div class="item">
+          <img src="https://picsum.photos/300/200/?random=1">
+          <h2>title</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, esse.</p>
         </div>
       </div>
     </div>
