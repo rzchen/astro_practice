@@ -10,6 +10,9 @@
       padding: 0;
       list-style: none;
     }
+    .section-block {
+      padding: 100px 0px;
+    }
     .container {
       width: 1000px;
       margin: auto;
@@ -18,6 +21,11 @@
     .main-title {
       width: 33.333333%;
       color: #fff;
+      position: relative;
+      z-index: 2;
+    }
+    .section-block:nth-child(even) .main-title {
+      margin-left: auto;
     }
     .main-title h2 {
       background-color: red;
@@ -32,11 +40,25 @@
     .main-title .txt {
       background-color: #000;
       padding: 20px;
+      position: absolute;
     }
     .mv {
       width: 80%;
       padding-left: 10%;
       font-size: 0px;
+      position: relative;
+    }
+    .mv::before {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 200px;
+      background-color: #aaa;
+      right: -20px;
+      top: -20px;
+    }
+    .mv a {
+      position: relative;
     }
     .mv img.mv-img {
       width: 97.5%;
@@ -56,6 +78,30 @@
       position: relative;
       z-index: 2;
     }
+    .main-txt span:first-child {
+      display: block;
+      color: red;
+      display: flex;
+      align-items: center;
+    }
+    .main-txt span:first-child::after {
+      content: '';
+      height: 2px;
+      background-color: red;
+      flex-grow: 1;
+      margin-left: 10px;
+    }
+    .main-txt p {
+      padding-left: 20px;
+      position: relative;
+    }
+    .main-txt p::before {
+      content: '•';
+      position: absolute;
+      color: red;
+      left: 5px;
+      top: 3px;
+    }
   </style>
 </head>
 <body>
@@ -64,6 +110,118 @@
       <div class="main-title">
         <h2>
           <span>01</span>操控樂趣
+        </h2>
+        <div class="txt">
+          <h3>人人滿意的駕駛體驗</h3>
+          <p>我說第二次將來警告明天，很久友情連結他對渠道資格這一力量體驗運行種子才能這個問題，暴力網頁課程上次鏡頭，研究所福州將軍妹妹方法驚人航空查找還是追求異常，夫人理念外資只好盯着這時出現風雲以下結果昨日，開展定義身上取得暫時改善大盤近期首次風景狀況頓時超過時刻。</p>
+        </div>
+      </div>
+      <div class="mv">
+        <a href="#">
+          <img src="https://picsum.photos/300/200/?random=1" class="mv-img">
+          <img src="https://picsum.photos/60/40/?random=3" class="mv-btn">
+        </a>
+      </div>
+      <div class="main-txt">
+        <span>因為我們做了這些革新</span>
+        <h4>低重心設計</h4>
+        <p>老婆一絲互動直接重新製造中心維修得知事項，已經沉默熱點報告。</p>
+        <h4>低重心設計</h4>
+        <p>老婆一絲互動直接重新製造中心維修得知事項，已經沉默熱點報告。</p>
+        <h4>低重心設計</h4>
+        <p>老婆一絲互動直接重新製造中心維修得知事項，已經沉默熱點報告。</p>
+      </div>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="container">
+      <div class="main-title">
+        <h2>
+          <span>01</span>操控樂趣
+        </h2>
+        <div class="txt">
+          <h3>人人滿意的駕駛體驗</h3>
+          <p>我說第二次將來警告明天，很久友情連結他對渠道資格這一力量體驗運行種子才能這個問題，暴力網頁課程上次鏡頭，研究所福州將軍妹妹方法驚人航空查找還是追求異常，夫人理念外資只好盯着這時出現風雲以下結果昨日，開展定義身上取得暫時改善大盤近期首次風景狀況頓時超過時刻。</p>
+        </div>
+      </div>
+      <div class="mv">
+        <a href="#">
+          <img src="https://picsum.photos/300/200/?random=1" class="mv-img">
+          <img src="https://picsum.photos/60/40/?random=3" class="mv-btn">
+        </a>
+      </div>
+      <div class="main-txt">
+        <span>因為我們做了這些革新</span>
+        <h4>低重心設計</h4>
+        <p>老婆一絲互動直接重新製造中心維修得知事項，已經沉默熱點報告。老婆一絲互動直接重新製造中心維修得知事項，已經沉默熱點報告。老婆一絲互動直接重新製造中心維修得知事項，已經沉默熱點報告。</p>
+        <h4>低重心設計</h4>
+        <p>老婆一絲互動直接重新製造中心維修得知事項，已經沉默熱點報告。</p>
+        <h4>低重心設計</h4>
+        <p>老婆一絲互動直接重新製造中心維修得知事項，已經沉默熱點報告。</p>
+      </div>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="container">
+      <div class="main-title">
+        <h2>
+          <span>02</span>操控樂趣
+        </h2>
+        <div class="txt">
+          <h3>人人滿意的駕駛體驗</h3>
+          <p>我說第二次將來警告明天，很久友情連結他對渠道資格這一力量體驗運行種子才能這個問題，暴力網頁課程上次鏡頭，研究所福州將軍妹妹方法驚人航空查找還是追求異常，夫人理念外資只好盯着這時出現風雲以下結果昨日，開展定義身上取得暫時改善大盤近期首次風景狀況頓時超過時刻。</p>
+        </div>
+      </div>
+      <div class="mv">
+        <a href="#">
+          <img src="https://picsum.photos/300/200/?random=1" class="mv-img">
+          <img src="https://picsum.photos/60/40/?random=3" class="mv-btn">
+        </a>
+      </div>
+      <div class="main-txt">
+        <span>因為我們做了這些革新</span>
+        <h4>低重心設計</h4>
+        <p>老婆一絲互動直接重新製造中心維修得知事項，已經沉默熱點報告。</p>
+        <h4>低重心設計</h4>
+        <p>老婆一絲互動直接重新製造中心維修得知事項，已經沉默熱點報告。</p>
+        <h4>低重心設計</h4>
+        <p>老婆一絲互動直接重新製造中心維修得知事項，已經沉默熱點報告。</p>
+      </div>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="container">
+      <div class="main-title">
+        <h2>
+          <span>03</span>操控樂趣
+        </h2>
+        <div class="txt">
+          <h3>人人滿意的駕駛體驗</h3>
+          <p>我說第二次將來警告明天，很久友情連結他對渠道資格這一力量體驗運行種子才能這個問題，暴力網頁課程上次鏡頭，研究所福州將軍妹妹方法驚人航空查找還是追求異常，夫人理念外資只好盯着這時出現風雲以下結果昨日，開展定義身上取得暫時改善大盤近期首次風景狀況頓時超過時刻。</p>
+        </div>
+      </div>
+      <div class="mv">
+        <a href="#">
+          <img src="https://picsum.photos/300/200/?random=1" class="mv-img">
+          <img src="https://picsum.photos/60/40/?random=3" class="mv-btn">
+        </a>
+      </div>
+      <div class="main-txt">
+        <span>因為我們做了這些革新</span>
+        <h4>低重心設計</h4>
+        <p>老婆一絲互動直接重新製造中心維修得知事項，已經沉默熱點報告。</p>
+        <h4>低重心設計</h4>
+        <p>老婆一絲互動直接重新製造中心維修得知事項，已經沉默熱點報告。</p>
+        <h4>低重心設計</h4>
+        <p>老婆一絲互動直接重新製造中心維修得知事項，已經沉默熱點報告。</p>
+      </div>
+    </div>
+  </div>
+  <div class="section-block">
+    <div class="container">
+      <div class="main-title">
+        <h2>
+          <span>04</span>操控樂趣
         </h2>
         <div class="txt">
           <h3>人人滿意的駕駛體驗</h3>
