@@ -1,0 +1,22 @@
+.main-title {
+  position: relative;
+}
+
+.main-title h2 {
+  background-color: red;
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+.main-title .txt {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+}
+.main-title .txt h3 {
+  background-color: #000;
+}
+img {
+  width: 100%;
+}

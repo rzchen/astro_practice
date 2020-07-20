@@ -2,16 +2,14 @@
   font-family: 微軟正黑體, arial;
   font-weight: lighter;
 }
-.container {
+/* .container {
   padding: 20px 0px;
-}
+} */
 .main-title {
   color: #646464;
   font-size: 20px;
   text-align: center;
 }
-
-
 .main-title h3::after {
   content: '';
   display: block;
