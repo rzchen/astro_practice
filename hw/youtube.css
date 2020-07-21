@@ -1,0 +1,42 @@
+a {
+  text-decoration: none;
+}
+
+.list-group {
+  margin: 20px 0px;
+}
+
+.video {
+  margin-bottom: 10px;
+}
+.video img {
+  width: 100%;
+}
+
+.channel-pic img {
+  border-radius: 50%;
+}
+
+.main-title h2 {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.channel-name h3 {
+  font-size: 13px;
+  color: #606060;
+}
+.channel-name h3::after {
+  content: '✪';
+  color: #4D4D4D;
+  padding-left: 3px;
+}
+
+
+.view-count p {
+  display: inline-block;
+  color: #4D4D4D;
+  font-size: 14px;
+}
