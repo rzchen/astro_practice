@@ -1,21 +1,25 @@
 *{
 	margin: 0;
 	padding: 0;
-	list-style: none;
+  list-style: none;
+  font-family: "微軟正黑體", "Microsoft JhengHei", Arial, Helvetica, sans-serif;
 }
 .container{
 	width: 100%;
-	max-width: 1200px;
+	max-width: 950px;
 	padding-left: 15px;
 	padding-right: 15px;
 	box-sizing: border-box;
-	margin: auto;
+  margin: auto;
+  background-color: #C1C1C1;
+  padding-bottom: 7px;
 }
 .row{
 	display: flex;
-	flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 	margin-left: -15px;
-	margin-right: -15px;
+  margin-right: -15px;
 }
 [class^="col-"]{
 	padding-left: 15px;
@@ -40,7 +44,7 @@
 	.col-md-2{  width: 16.666666%;}
 	.col-md-3{  width: 25%;}
 	.col-md-4{  width: 33.333333%;}
-	.col-md-5{  width: 41.666666%;}
+	.col-md-5{  width: 48.666666%;}
 	.col-md-6{  width: 50%;}
 	.col-md-7{  width: 58.333333%;}
 	.col-md-8{  width: 66.666666%;}
@@ -76,4 +80,57 @@
 	.col-xl-10{ width: 83.333333%;}
 	.col-xl-11{ width: 91.666666%;}
 	.col-xl-12{ width: 100%;}
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.list-group {
+  background-color: #fff;
+  margin-top: 7px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bank {
+  margin: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.discount p {
+  color: #535353;
+}
+.tag-border {
+  border: 1px solid #0F84FE;
+  border-radius: 5px;
+  padding: 2px;
+  color: #0F84FE;
+}
+.tag-big {
+  color: #0F84FE;
+  font-size: 24px;
+  font-weight: bolder;
+  margin-left: -5px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  background-color: #E2E2E2;
+  margin: 0px -15px;
+  padding: 0 5px;
+}
+.bottom p {
+  color: #8A8A8A;
+  margin-left: 10px;
+}
+
+.bottom .more {
+  color: #878787;
+  text-decoration: underline;
+  margin-right: 10px;
 }
