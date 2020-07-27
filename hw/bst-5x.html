@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <script src="https://kit.fontawesome.com/dfaa282089.js" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
@@ -13,11 +13,31 @@
       .bg-5x {
         background-color: #CE0035;
       }
+      ul, li, a {
+        list-style: none;
+        text-decoration: none;
+        color: #000;
+      }
+      ul {
+        padding-left: 0px;
+      }
+      .footer a,
+      .footer i {
+        color: #757575;
+      }
+      h2::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 80px;
+        background-color: #CE0035;
+        margin: 20px auto;
+      }
     </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="#" style="color: #CE0035">
         <img src="pic/5xlogo.png" width="100" height="30" class="d-inline-block align-top" alt="">
         專業程式教育機構
       </a>
@@ -27,14 +47,35 @@
     
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="far fa-gem"></i>
+              線上課程
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">
+              <i class="far fa-compass"></i>
+              ASTRO Camp
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <a class="nav-link" href="#">
+              <i class="fas fa-bolt"></i>
+              全方位課程
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">短期課程</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">專案開發</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">專欄文章</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">最新消息</a>
           </li>
         </ul>
       </div>
@@ -61,30 +102,30 @@
 
     <section class="about bg-light p-5">
       <h2 class="text-center">關於五倍紅寶石 About 5xRuby</h2>
-      <div class="card-deck p-5">
+      <div class="card-deck w-100 m-auto pt-5" style="max-width: 1200px">
         <div class="card text-center bg-light border-0">
-          <img src="pic/about-1.png" class="card-img-top" alt="...">
+          <img src="pic/about-1.png" class="card-img-top w-50 m-auto" alt="...">
           <div class="card-body">
             <h5 class="card-title">網頁設計<br>前後端課程教學</h5>
             <p class="card-text">帶你掌握程式技能轉職工程師，程式課程從入門到進階讓你快速上手，學員好評推薦轉職課程！</p>
           </div>
         </div>
         <div class="card text-center bg-light border-0">
-          <img src="pic/about-2.png" class="card-img-top" alt="...">
+          <img src="pic/about-2.png" class="card-img-top w-50 m-auto" alt="...">
           <div class="card-body">
             <h5 class="card-title">頂尖技術<br>網頁製作、專案開發</h5>
             <p class="card-text">網站開發到行動裝置 App 工程服務、系統設計開發甚至系統架設，提供專業的建議與頂尖的技術。</p>
           </div>
         </div>
         <div class="card text-center bg-light border-0">
-          <img src="pic/about-3.png" class="card-img-top" alt="...">
+          <img src="pic/about-3.png" class="card-img-top w-50 m-auto" alt="...">
           <div class="card-body">
             <h5 class="card-title">資訊軟體開發<br>技術顧問</h5>
             <p class="card-text">協助您將現有人力快速打造為 Ruby/Rails 團隊，無須經歷繁瑣的人才招募就有即戰力！</p>
           </div>
         </div>
         <div class="card text-center bg-light border-0">
-          <img src="pic/about-4.png" class="card-img-top" alt="...">
+          <img src="pic/about-4.png" class="card-img-top w-50 m-auto" alt="...">
           <div class="card-body">
             <h5 class="card-title">前後端工程師<br>社群經營</h5>
             <p class="card-text">Ruby 社群經營、舉辦各類活動，促進 Ruby 社群發展，歡迎前後端工程師分享交流。</p>
@@ -94,8 +135,8 @@
     </section>
 
     <section class="course-prompt p-5">
-      <h2 class="text-center">關於五倍紅寶石 About 5xRuby</h2>
-      <div class="card-deck p-5">
+      <h2 class="text-center">熱門網頁設計課程推薦</h2>
+      <div class="card-deck w-100 p-5 m-auto" style="max-width: 1200px">
         <div class="card">
           <img src="pic/course-1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -127,10 +168,178 @@
       </div>
     </section>
 
+    <section class="people-prompt bg-light p-5">
+      <h2 class="text-center">網頁課程推薦</h2>
+      <div class="media pt-5 w-100 m-auto" style="max-width: 600px">
+        <img src="pic/people-hana.jpg" class="mr-3 rounded-circle" alt="..." style="width: 80px">
+        <div class="media-body">
+          <p class="w-100">慕凡和龍哥是業界數一數二的 Ruby 大師，他們不光是底子深厚，也很懂得引導、訓練學習路上遇到挫折的 Ruby/Rails 學子。很慶幸有他們的協助讓我進入紅寶石的美妙世界。</p>
+          <h3 class="mt-0" style="color: #CE0035">Hana Chang</h3>
+          <p style="color: #787878">Co-Founder and CEO of BountyHunter</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="know-more">
+      <div class="container w-100 text-center py-5" style="max-width: 670px">
+        <h2 class="text-center">想更瞭解我們嗎？</h2>
+        <p class="pt-3 " style="font-size: 18px; line-height: 50px;">
+          您可以看看
+          <a href="#" style="color: #CE0035">常見問題</a>
+          或者直接
+          <a href="#" style="color: #CE0035">線上洽詢</a>
+          ，會有親切的客服人員回答您的問題，也可以透過社群網站隨時關注我們的動態。
+        </p>
+        <div class="pic">
+          <img src="pic/fb-icon.png" alt="" class="mx-3">
+          <img src="pic/twitter-icon.png" alt="" class="mx-3">
+        </div>
+      </div>
+    </section>
 
-
-
+    <section class="footer m-auto bg-light py-5">
+      <div class="container w-100" style="max-width: 1200px">
+        <div class="row">
+          <div class="col-12 col-md-4 footer-logo">
+            <a href="#" class="logo">
+              <img src="pic/5xlogo.png" alt="">
+            </a>
+            <ul>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+886-2-23315247">02-2331-5247</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:hi@5xruby.tw">hi@5xruby.tw</a>
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <a href="https://goo.gl/lz5v93">10046 台北市中正區衡陽路 7 號 5 樓</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-8">
+            <div class="row">
+              <div class="col-6 col-md-2">
+                <div class="item-footer">
+                  <h6>我們的課程</h6>
+                  <ul>
+                    <li>
+                      <a href="#">ASTRO Camp</a>
+                    </li>
+                    <li>
+                      <a href="#">線上課程</a>
+                    </li>
+                    <li>
+                      <a href="#">全方位課程</a>
+                    </li>
+                    <li>
+                      <a href="#">短期課程</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="item-footer">
+                  <h6>服務項目</h6>
+                  <ul>
+                    <li>
+                      <a href="#">專案開發</a>
+                    </li>
+                    <li>
+                      <a href="#">企業代訓</a>
+                    </li>
+                    <li>
+                      <a href="#">空間租借</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="item-footer">
+                  <h6>關於我們</h6>
+                  <ul>
+                    <li>
+                      <a href="#">關於我們</a>
+                    </li>
+                    <li>
+                      <a href="#">媒體報導</a>
+                    </li>
+                    <li>
+                      <a href="#">團隊成員</a>
+                    </li>
+                    <li>
+                      <a href="#">專欄文章</a>
+                    </li>
+                    <li>
+                      <a href="#">最新消息</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="item-footer">
+                  <h6>聯絡我們</h6>
+                  <ul>
+                    <li>
+                      <a href="#">聯絡詢價</a>
+                    </li>
+                    <li>
+                      <a href="#">工作機會</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="item-footer">
+                  <h6>幫助與政策</h6>
+                  <ul>
+                    <li>
+                      <a href="#">常見問題</a>
+                    </li>
+                    <li>
+                      <a href="#">隱私權政策</a>
+                    </li>
+                    <li>
+                      <a href="#">服務條款</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-md-2">
+                <div class="item-footer">
+                  <h6>追蹤</h6>
+                  <ul>
+                    <li>
+                      <i class="fab fa-facebook-square"></i>
+                      <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                      <i class="fab fa-github"></i>
+                      <a href="#">GitHub</a>
+                    </li>
+                    <li>
+                      <i class="fab fa-line"></i>
+                      <a href="#">Line@</a>
+                    </li>
+                    <li>
+                      <i class="fab fa-twitter"></i>
+                      <a href="#">Twitter</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="footer-bottom text-center border-top">
+              <p class="mt-2">© 2014 - 2020 五倍紅寶石股份有限公司 (5XRUBY CO., LTD) | 台北市短期補習班立案 第 7594 號</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <!-- Optional JavaScript -->
