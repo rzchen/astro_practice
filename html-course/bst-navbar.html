@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+    .navbar-dark .navbar-toggler:focus {
+      outline: none;
+    }
+    @media screen and (max-width: 767px){
+      .navbar-collapse {
+        position: absolute;
+        background-color: #aaa;
+        width: 100%;
+        top: 100%;
+        left: 0;
+      }
+    }
+      body {
+        padding-top: 60px;
+      }
+      .modal-backdrop {
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0 mx-auto">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav order-md-first">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">註冊/登入<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">問題<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        
+      </div>
+      </div>
+    </nav>
+
+    <h2>123</h2>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+      Launch demo modal
+    </button>
+    
+    <a href="#" data-toggle="modal" data-target="#exampleModal">open</a>
+    <a href="#exampleModal" data-toggle="modal">open</a>
+
+    
+    <h2>55555555555</h2>
+
+    <p>
+  <!-- <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a> -->
+  <!-- <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button> -->
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+</p>
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<h2>acc</h2>
+
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>123</h2>
+
+<div id="accordion2">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapse1" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion2">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </button>
+      </h5>
+    </div>
+    <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion2">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </button>
+      </h5>
+    </div>
+    <div id="collapse3" class="collapse" aria-labelledby="headingThree" data-parent="#accordion2">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">註冊/登入</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed velit nostrum iste quisquam qui cupiditate provident fuga minus, dolorum temporibus libero delectus ipsum dolores suscipit, sapiente dignissimos itaque, soluta cumque.</p>
+            <p>Exercitationem repudiandae voluptatibus ab voluptas reprehenderit ut itaque consectetur fuga cum rerum, nisi natus laboriosam id a nobis ipsum incidunt reiciendis cumque! Facere aliquam soluta dolorum ipsam voluptatum distinctio laborum!</p>
+            <p>Ea, voluptatem. Tenetur ullam ratione explicabo magnam asperiores dolor! Vero fugit debitis incidunt, odit tempore officia sit illo architecto amet suscipit esse, exercitationem porro corporis assumenda officiis veniam ad deleniti?</p>
+            <p>Obcaecati labore architecto corrupti ea numquam adipisci aspernatur unde deleniti omnis iusto aliquam, fugiat quos totam quasi accusamus at similique rem, reprehenderit praesentium tenetur quaerat! Vel neque labore perspiciatis in!</p>
+            <p>Ipsam, harum culpa rerum accusantium dignissimos velit similique laboriosam beatae molestias, eius maxime dolores voluptate tempora doloremque, perspiciatis deserunt neque nam voluptatem commodi sint repellat cumque? Ut maiores laboriosam reprehenderit.</p>
+            <p>Provident, quod nam voluptates aspernatur exercitationem unde deleniti amet veritatis. Illum facilis totam quo. Ducimus dicta consequatur architecto debitis iure consectetur non odio corrupti! Doloremque rerum pariatur id dignissimos nulla.</p>
+            <p>Neque consequuntur suscipit nobis temporibus rem reiciendis asperiores molestias eos esse ullam! Aperiam optio, illo, iste itaque aspernatur necessitatibus nisi fuga iusto ullam vel ducimus provident corporis laborum, consequatur non?</p>
+            <p>Excepturi, dolores earum iste omnis enim aut nam obcaecati, eius quos atque repellat incidunt esse? Iure explicabo, quisquam ullam reprehenderit facilis nihil id a nesciunt, vel aliquid fugit similique libero.</p>
+            <p>Quasi, non omnis rem repudiandae eaque doloremque fugiat voluptates odio dolores ipsa dolorum excepturi laboriosam commodi eligendi illum numquam iure, ducimus rerum ipsum? Quo dicta sed iusto voluptatem accusantium eum.</p>
+            <p>Impedit eligendi ea, consectetur iste neque veritatis vero quo consequuntur repellendus dignissimos, quis quisquam quae accusamus vel? Enim aspernatur, earum quis quisquam nemo ut excepturi molestias dolorum sapiente odit! Non.</p>
+            <p>Dolores adipisci cupiditate veritatis maiores laboriosam pariatur, cum nam eligendi. Aliquid voluptates earum vero, mollitia nobis delectus nulla iste quaerat consectetur voluptatibus, sit eligendi beatae deleniti eum impedit quas ut!</p>
+            <p>Sunt, delectus, voluptatem, qui minima ipsum asperiores quos atque temporibus possimus excepturi pariatur amet quia animi enim sequi. Consequuntur quisquam ratione repellendus laboriosam, unde porro! Asperiores similique obcaecati odio at!</p>
+            <p>Quo sint officiis at facere vel ipsa, fugit doloremque similique placeat quam ratione eum? Aliquid illo consequuntur aperiam voluptates error, temporibus id cumque, deserunt ut dolorum provident neque, dignissimos vitae.</p>
+            <p>Nostrum voluptate nam unde doloremque expedita vero, rerum alias aut? Optio nemo ipsum cumque, fugit dolor incidunt repellat quam laboriosam cupiditate unde quidem soluta impedit aliquam tenetur quasi neque illo?</p>
+            <p>Labore fugiat placeat repudiandae saepe. Aliquid voluptas asperiores inventore, sapiente, ipsa ex provident officia alias atque exercitationem, cupiditate numquam explicabo ipsum itaque possimus nisi! Tempora, nisi eos. Dignissimos, iste aut.</p>
+            <p>Eos dolorem quae neque eveniet eum. Suscipit recusandae optio dicta beatae ipsum sunt, fuga laudantium officia saepe sint ad numquam minus amet inventore ea impedit. Distinctio hic dolorem placeat perferendis.</p>
+            <p>Dolorum, commodi eos architecto quam dolor odit officiis reiciendis tempore, culpa soluta recusandae odio laboriosam. Illum nisi voluptatibus commodi aut velit nulla rerum repellat quasi odio, quis qui itaque ipsam.</p>
+            <p>Quibusdam ipsum, ea facere et iste libero cumque nobis, sit qui nostrum odit pariatur corporis incidunt quasi assumenda maiores consequatur ut temporibus fugiat sed minima! Modi doloremque autem perferendis libero.</p>
+            <p>Corporis, neque repudiandae a nemo suscipit quos recusandae vero excepturi error temporibus doloribus qui incidunt, nisi mollitia eligendi! Voluptate ullam soluta totam porro odio laudantium recusandae voluptas est ipsum repellat.</p>
+            <p>Tempora quis quaerat praesentium soluta, ex veritatis doloribus inventore voluptatum rerum ullam assumenda enim sit consectetur eius, in autem, delectus ipsa libero recusandae sapiente nam corporis! Rem temporibus nulla possimus.</p>
+            <p>Impedit nesciunt voluptatem, sit alias velit perferendis laborum inventore explicabo magni fuga amet vitae ea temporibus cupiditate quaerat repudiandae incidunt quas eius? Ipsa praesentium nobis similique ad mollitia deleniti nostrum.</p>
+            <p>Eum eaque deserunt accusamus mollitia architecto maxime ea, iste aspernatur veniam at dolor id minima quia. Sunt delectus soluta accusamus quasi ipsa repellat laudantium, distinctio cum sit eveniet, doloremque perferendis.</p>
+            <p>Praesentium deserunt magni possimus deleniti maiores incidunt suscipit quasi beatae. Beatae amet nulla dolor iusto laboriosam veritatis eveniet distinctio dolore adipisci obcaecati omnis, ad laudantium, iste harum corrupti totam quae.</p>
+            <p>Adipisci assumenda tenetur facere mollitia amet molestias fuga dolorem, iusto fugit id soluta nesciunt eius cupiditate distinctio repudiandae hic, voluptatem possimus maxime architecto. Fuga, odit explicabo. Similique provident cumque veniam?</p>
+            <p>Excepturi voluptatum obcaecati harum porro ratione? Iure repellendus fugiat voluptas repudiandae dolores. Voluptatibus ipsam nulla blanditiis et quibusdam voluptatum pariatur impedit, in inventore temporibus enim officiis sint veritatis necessitatibus minima.</p>
+            <p>Quo quibusdam itaque, quos qui voluptatibus tenetur repellendus tempora in optio? Laboriosam veritatis sint repellendus exercitationem est ullam, delectus provident omnis minima, ea molestias accusamus ipsum commodi dolorum voluptas libero.</p>
+            <p>Suscipit iure dicta sed a maxime odit perspiciatis veniam perferendis. Suscipit laborum perferendis ducimus molestiae provident soluta placeat, fugit quia nesciunt quam! Totam ex optio et, eligendi pariatur autem assumenda.</p>
+            <p>Blanditiis alias doloremque magni exercitationem nihil, animi nobis vitae quas modi delectus fugiat maiores! Atque deserunt illum sit, dolorum libero nostrum aspernatur expedita. Cupiditate ratione qui porro repellat similique exercitationem.</p>
+            <p>Quo, esse! Reiciendis eum obcaecati voluptatibus accusamus ipsum et veritatis, commodi optio saepe iusto dolorum fugit animi dolor inventore, vitae distinctio, suscipit dolore. Minus, fugiat corrupti. Animi sed reprehenderit cum.</p>
+            <p>Laboriosam officiis earum cupiditate enim perspiciatis quod reprehenderit temporibus repellat qui totam repellendus repudiandae a maiores iure quasi et ratione ex mollitia maxime cumque quos, modi error tenetur iste? Molestiae!</p>
+          </div>
+          <div class="modal-footer justify-content-center">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
