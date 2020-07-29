@@ -9,15 +9,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>Hello, world!</title>
+    <style>
+      .bs-tooltip-bottom .arrow::before {
+        background-color: red;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-6 mx-auto">
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere quis mollitia repellat officia. Earum, minus? Impedit doloribus soluta cumque tempora deserunt. Esse, voluptates itaque deleniti et maiores, beatae architecto accusamus vitae iste officia aliquam obcaecati exercitationem laudantium at repellendus, ratione incidunt quod eveniet nesciunt. Tempora nam ad dignissimos maiores recusandae voluptates, vero deleniti enim consequatur illo, natus tempore obcaecati rem.</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere quis mollitia repellat officia. Earum, minus? Impedit doloribus <span type="button" data-toggle="popover" title="標題 Popover title" data-content="內容<a href='https://csscoke.com'>連結</a> And here's some amazing content. It's very engaging. Right?" data-placement="bottom">soluta</span> tempora deserunt. Esse, voluptates itaque deleniti et maiores, beatae architecto accusamus vitae iste officia aliquam obcaecati exercitationem laudantium at repellendus, <span data-toggle="tooltip" data-placement="bottom" title="JOJOJO">ratione</span> incidunt quod eveniet nesciunt. Tempora nam ad dignissimos maiores recusandae voluptates, vero deleniti enim consequatur illo, natus tempore obcaecati rem.</p>
           <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="忘記密碼">
             ？
           </button>
+          <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="標題 Popover title" data-content="內容 And here's some amazing content. It's very engaging. Right?" data-placement="bottom">點按處Click to toggle popover</button>
         </div>    
       </div>
     </div>    
@@ -33,6 +39,9 @@
     <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover({
+          html: true
+        })
       })
     </script>
   </body>
