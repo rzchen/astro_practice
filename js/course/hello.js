@@ -39,10 +39,73 @@
 // // j = j + 1
 // // j += 1
 
-console.log(userName);
+// console.log(userName);
 
-let userName = "John Doe" // Camel case
+// let userName = "John Doe" // Camel case
 
-console.log(userName);
+// console.log(userName);
 
 
+// function greeting(name) {
+//   // say a friendly hi
+//   console.log("Hello world! This is" + name)
+//   return ;
+
+//   console.log("Hello world! This is" + name)
+// }
+
+// let result = greeting("Mary")
+// console.log(result)
+
+
+// 1000 8 
+// 500 9
+
+// function add(x, y) {
+//   return x + y;
+// }
+// function multiply(x, y) {
+//   return x * y;
+// }
+
+// function add1(i){ return i + 1}
+
+// let res8 = [1, 2, 3, 4, 5].map(add1)
+// // console.log(res8)
+
+// console.log([[]] == false)
+
+// let cartTotal = 1000;
+// let ratio;
+
+// function getRatio(total) {
+//   if(total > 1000) {
+//     return 0.8;
+//   } else if (total > 500) {
+//     return 0.9;
+//   } else {
+//     return 1;
+//   }
+// }
+
+// console.log(cartTotal * getRatio(cartTotal))
+
+// let array = [1, 2, 3, 4, 5, 6];
+// // let res43 = array.pop();
+// // console.log(res43)
+// // console.log(array)
+// let res64 = array.slice(0, 4);
+// console.log(res64)
+// console.log(array)
+
+
+
+let array = [1, 2, 3, 4, 5, 6];
+// let res43 = array.pop();
+let res64 = array.slice(0, 4);
+// console.log(res64)
+// console.log(array)
+
+let res50 = [0, 0, ...array, 7, 8, 9]
+console.log(res50)
+console.log(array)
