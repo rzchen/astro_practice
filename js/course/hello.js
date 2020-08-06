@@ -100,12 +100,67 @@
 
 
 
-let array = [1, 2, 3, 4, 5, 6];
-// let res43 = array.pop();
-let res64 = array.slice(0, 4);
-// console.log(res64)
+// let array = [1, 2, 3, 4, 5, 6];
+// // let res43 = array.pop();
+// let res64 = array.slice(0, 4);
+// // console.log(res64)
+// // console.log(array)
+
+// let res50 = [0, 0, ...array, 7, 8, 9]
+// console.log(res50)
 // console.log(array)
 
-let res50 = [0, 0, ...array, 7, 8, 9]
-console.log(res50)
-console.log(array)
+
+// let areaCode = {
+//   'us': '01',
+//   'tw': '886',
+//   'hk': '86'
+// }
+// let student = {
+//   'name': 'John',
+//   'age': 18,
+//   'gender': 'M',
+//   'favorite': ['music', 'eat']
+// }
+
+// let country = 'us'
+// console.log(areaCode.hk)
+
+// for(let x of res50) {
+//   console.log(x)
+// }
+
+// baz(1000)
+
+// // a lot of codes
+// function baz(x){
+//   var amount, total, qty;
+
+//   //do something
+//   amount = 100;
+//   console.log(amount + x)
+// }
+
+// let lalala = function (x) {
+//   console.log(`${x} in pot`)
+// }
+
+// let addOne = (x, y) => x + 1
+// let addOne = x => x + 1
+
+// for (var i = 0; i < 10; i++) {
+
+//   setTimeout(function () {
+//     console.log('這執行第' + i + '次');
+//   }, 10);
+// }
+
+let x1 = 100;
+
+function foo() {
+  //let x1 = 100;
+
+}
+foo();
+console.log(x1); //=> 100
+
