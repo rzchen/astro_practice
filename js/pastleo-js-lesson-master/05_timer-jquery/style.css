@@ -37,7 +37,8 @@ button:active {
   padding-left: 16px;
   background: linear-gradient(-90deg, #f5d2c5, #efeab3);
   overflow: hidden;
-  height: 40px;
+  height: 0px;
+  transition: height 0.4s linear;
 }
 
 #seconds {
