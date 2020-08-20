@@ -11,7 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
   form.addEventListener('submit', async event => {
     event.preventDefault();
 
-    // let's start coding
+    fetch('https://pastleo-posts-api.herokuapp.com/api/posts', {
+      method: 'POST',
+      head
+    })
 
   });
 })

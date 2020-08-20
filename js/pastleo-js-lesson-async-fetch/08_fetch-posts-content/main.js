@@ -1,11 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   const postTemplate = document.getElementById('post-template');
   const postContainer = document.getElementById('posts-container');
 
-  fetch('https://pastleo-posts-api.herokuapp.com/api/posts')
-    .then(response => response.json())
-    .then(posts => {
-      document.getElementById('init-loading').classList.add('hidden');
+  const response = await fetch('https://pastleo-posts-api.herokuapp.com/api/posts')
+  const posts = await response.json()
+
+  // console.log(posts)
+
+  document.getElementById('init-loading').classList.add('hidden');
 
       posts.forEach(post => {
         const postDOM = postTemplate.content.cloneNode(true);
@@ -22,14 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const postContentDiv = postDOM.querySelector('.post-content');
 
-        const showContent = event => {
-          fetch(post.api_url)
-            .then(response => response.json())
-            .then(post => {
-              postContentDiv.textContent = post.content;
-              descriptionDiv.classList.add('hidden');
-              postLinkA.classList.add('hidden');
-            })
+        const showContent = async event => {
+
+          const showResponse = await fetch(post.api_url)
+          const postDetails = await showResponse.json()
+
+          postContentDiv.textContent = post.content;
+          descriptionDiv.classList.add('hidden');
+          postLinkA.classList.add('hidden');
 
           event.preventDefault();
           postLinkA.textContent = 'Loading...';
@@ -40,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         postContainer.appendChild(postDOM);
       });
-    })
+
+
 });
 
